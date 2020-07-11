@@ -1,13 +1,19 @@
 # NamesCheck
 
-flip phillips
-flip@flipphillips.com
-https://flipphillips.com
+## What?
 
-Compare name space of different Mathematica builds.
+Compare the name space of different Mathematica builds.
 
-MIT license, 2020.
+Now with some sanity checking plus uses `GeneralUtilities` and `PrintDefinitions` for spelunking and exploration.
 
 ## Look!
 
 ![example](example.png)
+
+## Contact...
+
+flip phillips, flip@flipphillips.com, https://flipphillips.com
+
+## License §
+
+MIT, (c) 2020.

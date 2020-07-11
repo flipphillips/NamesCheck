@@ -1,0 +1,282 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10772,        274]
+NotebookOptionsPosition[      9359,        242]
+NotebookOutlinePosition[      9752,        258]
+CellTagsIndexPosition[      9709,        255]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["NamesCheck", "Title",
+ CellChangeTimes->{{3.803465221219328*^9, 3.8034652234466953`*^9}, 
+   3.803465272680448*^9},ExpressionUUID->"5e99a729-f176-48c5-b4cd-\
+cb7e9243ea46"],
+
+Cell[TextData[{
+ "Flip Phillips\n",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[{
+     RowBox[{
+       RowBox[{"flip", "@", "flipphillips"}], ".", "com"}], {
+      URL["mailto:flip@flipphillips.com"], "None"}, 
+     "mailto:flip@flipphillips.com", "HyperlinkActionRecycled", {
+     "HyperlinkActive"}, BaseStyle -> {"Hyperlink"}, HyperlinkAction -> 
+     "Recycled"},
+    "HyperlinkTemplate"], TextForm]],
+  FormatType->"TextForm",ExpressionUUID->
+  "4c352701-7786-4536-a4f2-afbd613ba87f"],
+ ",",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[{
+     RowBox[{" ", 
+       RowBox[{"flipphillips", ".", "com"}]}], {
+      URL["https://flipphillips.com"], "None"}, "https://flipphillips.com", 
+     "HyperlinkActionRecycled", {"HyperlinkActive"}, 
+     BaseStyle -> {"Hyperlink"}, HyperlinkAction -> "Recycled"},
+    "HyperlinkTemplate"], TextForm]],
+  FormatType->"TextForm",ExpressionUUID->
+  "add36b4e-c74f-488d-8da3-7cfc596a8fa6"],
+ "\nSummer 20"
+}], "Text",
+ CellChangeTimes->{{3.803465235199699*^9, 3.8034652679837513`*^9}, {
+  3.803465522022395*^9, 
+  3.803465527190007*^9}},ExpressionUUID->"5c9ef538-1dbd-4fb2-aa03-\
+a9f905e283fc"],
+
+Cell[CellGroupData[{
+
+Cell["Compare versions symbol names", "Section",
+ CellChangeTimes->{{3.803464741009397*^9, 
+  3.803464754735571*^9}},ExpressionUUID->"a00a7fa6-40a3-4431-b2b3-\
+06056c33713b"],
+
+Cell["\<\
+Make this somewhere you have write access... I made this directory to ease my \
+debugging and set permissions accordingly. Do what makes you happy in life.\
+\>", "Text",
+ CellChangeTimes->{{3.8034641635175257`*^9, 3.803464172474935*^9}, {
+   3.8034642495443907`*^9, 3.8034642719360437`*^9}, 
+   3.803464764907192*^9},ExpressionUUID->"537a584e-5ee9-476e-a5a4-\
+e34d39f3bb2d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"loc", "=", "\"\</var/log/Mathematica\>\""}], ";"}]], "Input",
+ CellChangeTimes->{{3.8034641195702887`*^9, 3.803464161086337*^9}, {
+  3.803464245281692*^9, 3.803464247094173*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"65c61d83-d3b3-4b14-b0d1-3a3dddf2cfec"],
+
+Cell["\<\
+When you run this, it makes a dump of the symbol names in the version you\
+\[CloseCurlyQuote]re dumping from. \
+\>", "Text",
+ CellChangeTimes->{{3.803464768157613*^9, 
+  3.803464785616785*^9}},ExpressionUUID->"bd0c40f3-a804-4284-8a45-\
+51f04b5768bd"],
+
+Cell[BoxData[
+ RowBox[{"Put", "[", 
+  RowBox[{
+   RowBox[{"Names", "[", "\"\<*\>\"", "]"}], ",", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"loc", ",", 
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<Names_\>\"", ",", 
+        RowBox[{"ToString", " ", "@", " ", "$VersionNumber"}], ",", " ", 
+        "\"\<.\>\"", ",", " ", 
+        RowBox[{"ToString", " ", "@", " ", "$ReleaseNumber"}], ",", 
+        "\"\<.\>\"", ",", 
+        RowBox[{"ToString", "@", "Internal`$LayoutCreationID"}]}], "]"}]}], 
+     "}"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8033330297182093`*^9, 3.803333055440749*^9}, {
+   3.803333169194683*^9, 3.8033331935337687`*^9}, {3.803333694958503*^9, 
+   3.8033336996492243`*^9}, {3.803334325565205*^9, 3.8033343467373953`*^9}, {
+   3.803334718219467*^9, 3.803334719148896*^9}, 3.8033350379989*^9, {
+   3.803335071778468*^9, 3.803335074480876*^9}, {3.803335106660213*^9, 
+   3.803335124682782*^9}, 3.80333527444781*^9, {3.803337229693228*^9, 
+   3.803337244108474*^9}, {3.803463998400146*^9, 3.8034640009065*^9}, {
+   3.803464287170947*^9, 3.8034642888441887`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"c9ea6dc9-95a4-434f-8be0-cd7bb2d90c86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["browse l\[CloseCurlyQuote] difference", "Section",
+ CellChangeTimes->{{3.803464791108411*^9, 
+  3.803464804668713*^9}},ExpressionUUID->"a5cbd506-8ac4-4a9b-bc67-\
+3810139336fc"],
+
+Cell[TextData[{
+ "Compute  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["A", "c"], "=", 
+    RowBox[{"U", " ", "\\", " ", "A"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9d2604b5-cec4-4723-9571-6996d6a08a99"]
+}], "Text",
+ CellChangeTimes->{{3.803464865934618*^9, 3.803464870023634*^9}, {
+  3.8034649536425123`*^9, 
+  3.8034649880961018`*^9}},ExpressionUUID->"95578363-b3fa-46ba-b7df-\
+cb7926c2ea87"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"files", "=", 
+   RowBox[{"Reverse", "[", 
+    RowBox[{"FileNames", "[", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"loc", ",", "\"\</Names*\>\""}], "}"}], "]"}], "]"}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"names", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringDrop", "[", 
+      RowBox[{"#", ",", "6"}], "]"}], "&"}], "/@", 
+    RowBox[{"FileNameTake", "/@", "files"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"stuff", "=", 
+    RowBox[{"MapThread", "[", 
+     RowBox[{"Rule", ",", 
+      RowBox[{"{", 
+       RowBox[{"files", ",", "names"}], "}"}]}], "]"}]}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Complement", "@@", 
+    RowBox[{"Get", "/@", 
+     RowBox[{"{", 
+      RowBox[{"U", ",", "A"}], "}"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"U", ",", "stuff"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"A", ",", "stuff"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.803463839679749*^9, 3.803463841307341*^9}, {
+  3.8034643213722343`*^9, 3.8034643294786777`*^9}, {3.803464607468239*^9, 
+  3.8034646079019938`*^9}, {3.803464812123101*^9, 3.8034648464392548`*^9}, {
+  3.803464933970335*^9, 3.80346494192911*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"d9860588-e103-4c42-bfce-40297f03089f"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`A$$ = 
+    "/var/log/Mathematica/Names_12.1.1.6996920", $CellContext`U$$ = 
+    "/var/log/Mathematica/Names_12.2.0.6998753", Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`U$$], {
+      "/var/log/Mathematica/Names_12.2.0.7001063" -> "12.2.0.7001063", 
+       "/var/log/Mathematica/Names_12.2.0.6998753" -> "12.2.0.6998753", 
+       "/var/log/Mathematica/Names_12.1.1.6996920" -> "12.1.1.6996920"}}, {
+      Hold[$CellContext`A$$], {
+      "/var/log/Mathematica/Names_12.2.0.7001063" -> "12.2.0.7001063", 
+       "/var/log/Mathematica/Names_12.2.0.6998753" -> "12.2.0.6998753", 
+       "/var/log/Mathematica/Names_12.1.1.6996920" -> "12.1.1.6996920"}}}, 
+    Typeset`size$$ = {588.25, {165.76025390625, 15.990032404661179`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`A$$ = 
+        "/var/log/Mathematica/Names_12.2.0.7001063", $CellContext`U$$ = 
+        "/var/log/Mathematica/Names_12.2.0.7001063"}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Apply[Complement, 
+        Map[Get, {$CellContext`U$$, $CellContext`A$$}]], 
+      "Specifications" :> {{$CellContext`U$$, {
+         "/var/log/Mathematica/Names_12.2.0.7001063" -> "12.2.0.7001063", 
+          "/var/log/Mathematica/Names_12.2.0.6998753" -> "12.2.0.6998753", 
+          "/var/log/Mathematica/Names_12.1.1.6996920" -> 
+          "12.1.1.6996920"}}, {$CellContext`A$$, {
+         "/var/log/Mathematica/Names_12.2.0.7001063" -> "12.2.0.7001063", 
+          "/var/log/Mathematica/Names_12.2.0.6998753" -> "12.2.0.6998753", 
+          "/var/log/Mathematica/Names_12.1.1.6996920" -> "12.1.1.6996920"}}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{652., {157., 164.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.8034638623501377`*^9, 3.8034638661825027`*^9}, 
+   3.803463914109768*^9, 3.803464354507894*^9, 3.8034644346457872`*^9, 
+   3.80346446497965*^9, {3.8034646939581003`*^9, 3.803464720409114*^9}, 
+   3.803464847700338*^9, 3.8034649427930403`*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"df22270c-1781-483f-a0d3-fcfd96665121"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 905},
+WindowMargins->{{Automatic, 302}, {Automatic, 30}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (July 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7a921e6c-12ac-4446-a100-149e7e6e8909"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 178, 3, 132, "Title",ExpressionUUID->"5e99a729-f176-48c5-b4cd-cb7e9243ea46"],
+Cell[761, 27, 1127, 31, 113, "Text",ExpressionUUID->"5c9ef538-1dbd-4fb2-aa03-a9f905e283fc"],
+Cell[CellGroupData[{
+Cell[1913, 62, 174, 3, 90, "Section",ExpressionUUID->"a00a7fa6-40a3-4431-b2b3-06056c33713b"],
+Cell[2090, 67, 384, 7, 79, "Text",ExpressionUUID->"537a584e-5ee9-476e-a5a4-e34d39f3bb2d"],
+Cell[2477, 76, 292, 5, 37, "Input",ExpressionUUID->"65c61d83-d3b3-4b14-b0d1-3a3dddf2cfec"],
+Cell[2772, 83, 260, 6, 79, "Text",ExpressionUUID->"bd0c40f3-a804-4284-8a45-51f04b5768bd"],
+Cell[3035, 91, 1200, 23, 153, "Input",ExpressionUUID->"c9ea6dc9-95a4-434f-8be0-cd7bb2d90c86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4272, 119, 182, 3, 90, "Section",ExpressionUUID->"a5cbd506-8ac4-4a9b-bc67-3810139336fc"],
+Cell[4457, 124, 446, 13, 48, "Text",ExpressionUUID->"95578363-b3fa-46ba-b7df-cb7926c2ea87"],
+Cell[CellGroupData[{
+Cell[4928, 141, 1341, 38, 142, "Input",ExpressionUUID->"d9860588-e103-4c42-bfce-40297f03089f"],
+Cell[6272, 181, 3047, 56, 344, "Output",ExpressionUUID->"df22270c-1781-483f-a0d3-fcfd96665121"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
